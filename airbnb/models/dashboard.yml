@@ -1,0 +1,16 @@
+exposures:
+  - name: AirBnB_Stats
+    label: AirBnB Stats
+    type: dashboard
+    maturity: low
+    url: https://23f690a2.us1a.app.preset.io/superset/dashboard/8/?native_filters_key=8pTYZ47rKIDrP8joKlci1g
+    description: Executive Dashboard about Airbnb listings and hosts
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_fullmoon_reviews')
+      - ref('dim_listings_per_host')
+
+    owner:
+      name: Michael Kraegeloh
+      email: michael.kraegeloh@gmail.com
